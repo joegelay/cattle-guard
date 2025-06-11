@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cattle Guard</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐄</text></svg>"
+    />
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden; /* Hide scrollbars, ensuring full screen */
+        font-family: 'sans-serif';
+        background-color: #000; /* Black background in case video loads slowly */
+      }
+      #fullscreenVideo {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        width: 95%;
+        height: 95%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <video id="fullscreenVideo" autoplay loop preload="auto" muted controls>
+      <source src="./public/cattle-guard.mp4" type="video/mp4" />
+    </video>
+  </body>
+</html>
